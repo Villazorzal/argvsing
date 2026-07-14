@@ -67,7 +67,6 @@
     <nav class="main-nav">
       <a href="#partido" class="active">Partido</a>
       <a href="#donde-ver">Dónde ver</a>
-      <a href="#eventos">Minuto a minuto</a>
       <a href="#alineaciones">Alineaciones</a>
       <a href="#horario">Horario</a>
     </nav>
@@ -91,7 +90,7 @@
     <div class="container">
       <div class="matchboard-head">
         <span class="comp-badge">Mundial 2026 · Semifinal</span>
-        <span class="status-badge" id="status-badge">Programado</span>
+        <span class="status-badge">Programado</span>
       </div>
 
       <div class="match-card">
@@ -102,11 +101,10 @@
 
         <div class="score-block">
           <div class="score">
-            <span id="score-home">–</span>
+            <span>–</span>
             <span class="vs">VS</span>
-            <span id="score-away">–</span>
+            <span>–</span>
           </div>
-          <div class="live-minute" id="live-minute" hidden></div>
           <div class="countdown" id="countdown" aria-live="polite">
             <div class="c-box"><span id="days">00</span><small>días</small></div>
             <div class="c-box"><span id="hours">00</span><small>hrs</small></div>
@@ -175,25 +173,19 @@
         <div class="ad-placeholder">Espacio publicitario</div>
       </div>
 
-      <section id="eventos" class="panel">
-        <h2 class="section-title">Minuto a minuto</h2>
-        <p class="panel-intro" id="eventos-empty">Los eventos en vivo (goles, tarjetas, sustituciones) aparecerán aquí automáticamente cuando arranque el partido.</p>
-        <ul class="events-feed" id="events-feed"></ul>
-      </section>
-
       <section id="alineaciones" class="panel">
-        <h2 class="section-title">Alineaciones</h2>
-        <p class="panel-intro" id="lineups-empty">Se confirman aproximadamente una hora antes del partido. Esta sección se actualiza sola en cuanto estén disponibles.</p>
+        <h2 class="section-title">Alineaciones probables</h2>
+        <p class="panel-intro">Se confirman aproximadamente una hora antes del partido. Vuelve más tarde para ver el once inicial.</p>
         <div class="lineups">
           <div class="lineup-col">
-            <h3 id="lineup-home-name">Argentina</h3>
-            <ol class="lineup-list placeholder-list" id="lineup-home">
+            <h3>Argentina</h3>
+            <ol class="lineup-list placeholder-list">
               <li>Por confirmar</li>
             </ol>
           </div>
           <div class="lineup-col">
-            <h3 id="lineup-away-name">Inglaterra</h3>
-            <ol class="lineup-list placeholder-list" id="lineup-away">
+            <h3>Inglaterra</h3>
+            <ol class="lineup-list placeholder-list">
               <li>Por confirmar</li>
             </ol>
           </div>
@@ -247,6 +239,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script src="live.js"></script>
 </body>
 </html>

@@ -142,25 +142,6 @@ a { color: inherit; text-decoration: none; }
 }
 .comp-badge { background: var(--panel-alt); border: 1px solid var(--border); color: var(--text); }
 .status-badge { background: rgba(255,176,32,0.15); color: var(--accent); border: 1px solid rgba(255,176,32,0.3); }
-.status-badge.is-live {
-  background: rgba(200,16,46,0.18);
-  color: #ff5266;
-  border-color: rgba(200,16,46,0.4);
-  animation: pulse-live 1.6s ease-in-out infinite;
-}
-@keyframes pulse-live {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.55; }
-}
-
-.live-minute {
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-size: 0.9rem;
-  color: #ff5266;
-  letter-spacing: 0.5px;
-  margin-bottom: 14px;
-}
 
 .match-card {
   display: grid;
@@ -288,25 +269,6 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   letter-spacing: 0.4px;
 }
-
-.events-feed { list-style: none; }
-.events-feed li {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px dashed var(--border);
-  font-size: 0.88rem;
-}
-.events-feed li:last-child { border-bottom: none; }
-.events-feed .ev-minute {
-  font-family: 'Oswald', sans-serif;
-  color: var(--accent);
-  min-width: 40px;
-  font-weight: 600;
-}
-.events-feed .ev-icon { min-width: 18px; }
-.events-feed .ev-team { color: var(--muted); font-size: 0.78rem; }
 
 .lineups {
   display: grid;
