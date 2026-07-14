@@ -50,13 +50,3 @@ document.getElementById('kickoff-text').textContent =
 
 tick();
 const timer = setInterval(tick, 1000);
-
-const clockFormatter = new Intl.DateTimeFormat('es-ES', {
-  hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Europe/Madrid'
-});
-const clockEl = document.getElementById('reloj-es');
-function tickClock() {
-  clockEl.textContent = clockFormatter.format(new Date()) + ' (España)';
-}
-tickClock();
-setInterval(tickClock, 1000);

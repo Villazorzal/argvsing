@@ -36,21 +36,6 @@ h1, h2, h3, .brand-name, .team h2, .score .vs, .comp-badge, .status-badge {
 
 a { color: inherit; text-decoration: none; }
 
-/* Utility bar */
-.utility-bar {
-  background: #05070a;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.75rem;
-  color: var(--muted);
-}
-.utility-inner {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 30px;
-}
-.utility-inner .sep { color: var(--border); }
-
 /* Header */
 .site-header {
   background: var(--panel);
@@ -301,9 +286,6 @@ footer {
 /* ===== Responsive: móvil ===== */
 @media (max-width: 640px) {
   .container { padding: 0 16px; }
-
-  .utility-inner { font-size: 0.68rem; gap: 6px; }
-  .utility-inner span:last-child { display: none; }
 
   .header-inner { height: 56px; }
   .brand-mark { font-size: 0.7rem; padding: 4px 6px; }
