@@ -200,6 +200,26 @@ a { color: inherit; text-decoration: none; }
 .kickoff-note strong { color: var(--text); }
 .edit-flag { color: var(--accent); }
 
+.match-info {
+  max-width: 640px;
+  margin: 32px auto 0;
+  padding: 0 10px;
+}
+.scroll-prompt {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  margin-bottom: 18px;
+  animation: pulse-watch 2s ease-in-out infinite;
+}
+.match-info p:not(.scroll-prompt) {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 14px;
+}
+
 .watch-cta { text-align: center; margin-top: 32px; }
 .btn-watch {
   display: inline-flex;
