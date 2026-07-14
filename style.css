@@ -292,3 +292,46 @@ footer {
   font-size: 0.78rem;
 }
 .footer-inner p { margin-bottom: 6px; }
+
+/* ===== Responsive: móvil ===== */
+@media (max-width: 640px) {
+  .container { padding: 0 16px; }
+
+  .utility-inner { font-size: 0.68rem; gap: 6px; }
+  .utility-inner span:last-child { display: none; }
+
+  .header-inner { height: 56px; }
+  .brand-mark { font-size: 0.7rem; padding: 4px 6px; }
+  .brand-name { font-size: 0.92rem; }
+  .main-nav a { font-size: 0.75rem; }
+
+  .ticker-track { gap: 32px; font-size: 0.72rem; }
+
+  .matchboard { padding: 24px 0 20px; }
+  .matchboard-head { gap: 8px; margin-bottom: 16px; }
+  .comp-badge, .status-badge { font-size: 0.65rem; padding: 4px 10px; }
+
+  .match-card {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+  .crest { width: 64px; height: 64px; }
+  .team h2 { font-size: 1.05rem; }
+
+  .score { font-size: 1.9rem; gap: 10px; margin-bottom: 14px; }
+  .countdown { flex-wrap: wrap; gap: 6px; }
+  .c-box { min-width: 44px; padding: 6px 8px; }
+  .c-box span { font-size: 1.05rem; }
+  .c-box small { font-size: 0.56rem; }
+
+  .kickoff-note { font-size: 0.78rem; }
+
+  .match-info { padding: 0 4px; }
+  .scroll-prompt { font-size: 1.1rem; padding: 10px 18px; margin-bottom: 18px; }
+  .match-info p:not(.scroll-prompt) { font-size: 0.88rem; }
+
+  .btn-watch { font-size: 1.3rem; padding: 18px 24px; gap: 10px; }
+  .btn-watch-arrow { width: 26px; height: 26px; font-size: 0.75rem; }
+}
