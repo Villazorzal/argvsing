@@ -45,8 +45,6 @@ const timeFormatter = new Intl.DateTimeFormat('es-ES', {
 });
 
 const matchDate = new Date(MATCH_DATETIME);
-document.getElementById('fecha-texto').textContent = dateFormatter.format(matchDate);
-document.getElementById('hora-texto').textContent = timeFormatter.format(matchDate) + ' (hora peninsular)';
 document.getElementById('kickoff-text').textContent =
   dateFormatter.format(matchDate) + ' a las ' + timeFormatter.format(matchDate);
 
