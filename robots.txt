@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://verargentinainglaterra.cfd/sitemap.xml
+Sitemap: https://eventosendirecto.site/sitemap.xml
